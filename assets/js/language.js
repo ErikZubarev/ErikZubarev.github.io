@@ -1,26 +1,26 @@
 document.addEventListener('DOMContentLoaded', function () {
-    const languageSelector = document.getElementById('language-selector');
+    const flagButtons = document.querySelectorAll('.flag-button');
 
     const translations = {
+        se: {
+            blurb: 'AI, IT och cybersäkerhets entusiast med en passion för inlärning och problemlösning',
+            started: ''
+        },
         en: {
-            title: 'Hello, World!',
-            description: 'This is a simple language switcher example.'
+            blurb: 'AI, IT and cybersecurity enthusiast with a passion for learning and problem solving',
+            started: 'Where I started'
         },
-        de: {
-            title: 'Hallo, Welt!',
-            description: 'Dies ist ein einfaches Beispiel für einen Sprachwechsler.'
-        },
-        es: {
-            title: '¡Hola, Mundo!',
-            description: 'Este es un ejemplo simple de un cambiador de idioma.'
+        ru: {
+            blurb: 'something russian'
         }
     };
 
-    languageSelector.addEventListener('change', function () {
-        const selectedLanguage = languageSelector.value;
-        const translation = translations[selectedLanguage];
+    flagButtons.forEach(button => {
+        button.addEventListener('click', function () {
+            const selectedLanguage = button.getAttribute('data-language');
+            const translation = translations[selectedLanguage];
 
-        document.getElementById('title').textContent = translation.title;
-        document.getElementById('description').textContent = translation.description;
+            document.getElementById('blurb').textContent = translation.blurb
+        });
     });
 });

@@ -12,25 +12,21 @@
 		<meta name="description" content="" />
 		<meta name="keywords" content="" />
 		<link rel="stylesheet" href="assets/css/main.css"/>
+		<link rel="stylesheet" href="assets/css/flag.css"/>
 	</head>
 	<body class="is-preload">
-
-
-			<div>
-				<button class="flag-button" data-language="en">
-					<img src="https://flagcdn.com/us.svg" alt="English">
-				</button>
-				<button class="flag-button" data-language="de">
-					<img src="https://flagcdn.com/de.svg" alt="Deutsch">
-				</button>
-				<button class="flag-button" data-language="es">
-					<img src="https://flagcdn.com/es.svg" alt="Español">
-				</button>
-			</div>
-
-			<script src="/assets/js/language.js"></script>
-
-
+		<div class="fixed-box">
+			<button class="flag-button" data-language="se">
+				<img src="https://flagcdn.com/se.svg" alt="SE">
+			</button>
+			<button class="flag-button" data-language="en">
+				<img src="https://flagcdn.com/us.svg" alt="EN">
+			</button>
+			<button class="flag-button" data-language="ru">
+				<img src="https://flagcdn.com/ru.svg" alt="RU">
+			</button>
+		</div>
+		
 		<!-- Wrapper -->
 			<div id="wrapper">
 
@@ -38,7 +34,8 @@
 					<section class="intro">
 						<header>
 							<h1>Erik Zubarev</h1>
-							<p> AI, IT and cybersecurity enthusiast with a passion for learning and problem solving <br> <a href="https://www.linkedin.com/in/erik-zubarev/" target="_blank">@LinkedIn</a></p>
+							<p id="blurb"> AI, IT och cybersäkerhets entusiast med en passion för inlärning och problemlösning
+							</p>
 							<ul class="actions">
 								<li><a href="#first" class="arrow scrolly"><span class="label">Next</span></a></li>
 							</ul>
@@ -51,7 +48,7 @@
 				<!-- Section -->
 					<section id="first">
 						<header>
-							<h2>Where I started</h2>
+							<h2 id="started">Where I started</h2>
 						</header>
 						<div class="content">
 							<p>
@@ -487,6 +484,7 @@ print 'Sorted in ' + i + ' iterations.';</code></pre>
 										<li><a href="#" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
 										<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
 										<li><a href="#" class="icon brands fa-codepen"><span class="label">Codepen</span></a></li>
+										<li><a href="https://www.linkedin.com/in/erik-zubarev/" target="_blank">@LinkedIn</a></li>
 									</ul>
 								</li>
 							</ul>
@@ -499,12 +497,12 @@ print 'Sorted in ' + i + ' iterations.';</code></pre>
 			</div>
 
 		<!-- Scripts -->
+			<script src="assets/js/language.js"></script>
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrolly.min.js"></script>
 			<script src="assets/js/browser.min.js"></script>
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-
 	</body>
 </html>

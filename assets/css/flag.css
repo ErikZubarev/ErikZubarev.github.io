@@ -1,9 +1,18 @@
-.flag-button {
-    cursor: pointer;
-    border: none;
-    background: none;
-}
 .flag-button img {
-    width: 30px;
-    height: 20px;
+    width: 3rem;
+    height: 3rem;
+}
+.fixed-box {
+    position: fixed;
+    top:0;
+    left:0;
+    z-index:1;
+    margin: 1rem;
+}
+
+.fixed-box > button {
+    padding:1;
+    margin:0;
+    line-height: 0;
+    height: 0;
 }
