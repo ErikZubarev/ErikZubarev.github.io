@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
-    const flagButtons = document.querySelectorAll('.flag-button');
+    const languageSelector = document.getElementById('language-selector');
 
     const translations = {
         se: {
@@ -37,18 +37,17 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     };
 
-    flagButtons.forEach(button => {
-        button.addEventListener('click', function () {
-            const selectedLanguage = button.getAttribute('data-language');
-            const translation = translations[selectedLanguage];
-            
-            for (const key in translation) {
-                if (translation.hasOwnProperty(key)) {
-                    document.getElementById(key).innerHTML = translation[key];
-                }
+    languageSelector.addEventListener('change', function () {
+        const selectedLanguage = languageSelector.value;
+        const translation = translations[selectedLanguage];
+
+        for (const key in translation) {
+            if (translation.hasOwnProperty(key)) {
+                document.getElementById(key).innerHTML = translation[key];
             }
-        });
+        }
     });
+
 
     window.onload = function() {
         const translation = translations['se'];
