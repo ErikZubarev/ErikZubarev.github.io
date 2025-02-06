@@ -16,8 +16,9 @@ document.addEventListener('DOMContentLoaded', function () {
             firstParagraph4: 'Tack vare mitt arbete med skolambassadörerna erbjöd rektorn mig ett jobb efter examen. Jag <strong>arbetade inom IT på LBS</strong> i fyra år medan jag fortsatte mina studier vid Stockholms universitet. Jag fick alltså möjligheten att försärja mig på min passion sammtidigt som jag strävade efter att lära mig så mycket jag kunde. Trots att jag inte hade mycket fritid deltog jag ändå i fritidsaktiviteter vid universitetet, som att driva studentpuben och hjälpa utbytesstudenter, med hopp om att själv bli utbytesstudent en dag.',
             firstParagraph5: 'Idag har jag grundat mig inom IT med en <strong>kandidatexamen i data- och systemvetenskap</strong>, en djup passion för AI och cybersäkerhet och en vilja att fortsätta lära mig. När jag ser mot framtiden är jag ivrig att använda mina färdigheter och erfarenheter för att bidra till innovativa och meningsfulla projekt.',
             fourthIntro:'<strong>I denna sektion presenterar jag en samling av mina arbeten inom IT-området.</strong> Här syns några av de bästa projekten jag har jobbat med som illustrerar mina kunskaper. Varje projekt länkar även till GitHub ifall du vill ha tillgång till koden',
-            fourthProject1Header: '<a href="https://github.com/PVT-15-3/HoopUp">HoopUp - basketappen</a>',
-            fourthProject1text: '',
+            fourthProject1Header: '<a href="https://github.com/PVT-15-3/HoopUp" target="_blank">HoopUp - basketappen</a>',
+            fourthProject1text1: 'HoopUp är ett projekt jag och sju andra personer sammarbetade på under vår utbildning på Stockholms Universitet. Med fyra designers och fyra programmerare lyckades vi skapa en innovativ app som integrerar API:er, unit testing och databaser för att kunna boka in basketspel, filtrera vem som får vara med samt ha en chatt för att kunna plannera.',
+            fourthProject1text2: 'Jag antog scrum master rollen under projektet samt hjälpte jag till med att programmera och unit-testa. Vi använde GitHub aktivt och följde agile scrum modellen under hela projektet och slutade upp med något vi alla är otroligt stolta över. Projektet var för det mesta skrivet i Dart genom Flutter, och kan där för laddas ner på både iOS och Android',
             fourthProject2Header: '',
             fourthProject2text: '',
             fourthProject3Header: '',
@@ -46,8 +47,9 @@ document.addEventListener('DOMContentLoaded', function () {
             firstParagraph4:'Due to my work with the school embassy, I was offered a job by the principal upon graduation. I <strong>worked in IT at LBS</strong> for four years while continuing my studies at Stockholm University, making a living from my passion and striving to learn as much as I could. Despite having little free time, I still participated in extracurricular activities at university, such as managing the student bar and assisting exchange students, with the hope of becoming an exchange student myself someday.',
             firstParagraph5:'Today, I stand with a solid foundation in IT, a <strong>bachelor&#39s degree in computer and data science</strong>, a deep-rooted passion for AI and cybersecurity, and a desire to continue learning. As I look to the future, I am eager to leverage my skills and experiences to contribute to innovative and impactful projects.',
             fourthIntro:'<strong>This sections showcases the different projects I have worked on.</strong> These are some of the best projects that illustrate my knowlage and abilities. Each project links to my GitHub if you need access to the code',
-            fourthProject1Header: '<a href="https://github.com/PVT-15-3/HoopUp">HoopUp - basketball app</a>',
-            fourthProject1text: '',
+            fourthProject1Header: '<a href="https://github.com/PVT-15-3/HoopUp" target="_blank">HoopUp - basketball app</a>',
+            fourthProject1text1: 'HoopUp is a project that I and seven other people collaborated on during our studies at Stockholm University. With four designers and four programmers, we managed to create an innovative app that integrates APIs, unit testing, and databases to book basketball games, filter who can join, and have a chat for planning.',
+            fourthProject1text2: 'I took on the role of Scrum Master during the project and also helped with programming and unit testing. We actively used GitHub and followed the Agile Scrum model throughout the project, resulting in something we are all incredibly proud of. The project was mostly written in Dart using Flutter, and can therefore be downloaded on both iOS and Android.',
             fourthProject2Header: '',
             fourthProject2text: '',
             fourthProject3Header: '',
@@ -77,7 +79,8 @@ document.addEventListener('DOMContentLoaded', function () {
             firstParagraph5:'',
             fourthIntro:'',
             fourthProject1Header: '',
-            fourthProject1text: '',
+            fourthProject1text1: '',
+            fourthProject1text2: '',
             fourthProject2Header: '',
             fourthProject2text: '',
             fourthProject3Header: '',
@@ -87,10 +90,10 @@ document.addEventListener('DOMContentLoaded', function () {
             finalAddress: '',
             finalElsewhere: '',
             finalEmailForm: '',
-            namePlaceholder: 'Namn',
-            emailPlaceholder: 'E-post',
-            messagePlaceholder: 'Meddelande',
-            buttonText: 'Skicka meddelande'
+            namePlaceholder: '',
+            emailPlaceholder: '',
+            messagePlaceholder: '',
+            buttonText: ''
         }
     };
 
