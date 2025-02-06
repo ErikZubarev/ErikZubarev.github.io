@@ -4,8 +4,5 @@
     left:0;
     z-index:1;
     margin: 1rem;
+    width: 8rem;
 }
-
-select#language-selector option[value="se"] { background-image:url(https://flagcdn.com/se.svg);   }
-select#language-selector option[value="en"] { background-image:url(https://flagcdn.com/en.svg); }
-select#language-selector option[value="ru"] { background-image:url(https://flagcdn.com/ru.svg); }
