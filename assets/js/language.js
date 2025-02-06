@@ -4,9 +4,11 @@ document.addEventListener('DOMContentLoaded', function () {
     const translations = {
         se: {
             blurb: 'AI, IT och cybersäkerhets entusiast med en passion för inlärning och problemlösning <br><a href="https://www.linkedin.com/in/erik-zubarev/" target="_blank">@LinkedIn</a>',
-            firstheader1: 'Vart jag började',
+            arrowText: '<strong>Kontakta mig</strong>',
+            firstheader1: 'Om mig',
             firstheader2: 'Utbildning, arbetserfarenhet och prestationer',
             thirdheader: 'Kompetenser',
+            fourthHeader: 'Projekt',
             finalHeader: 'Hör av dig',
             firstParagraph1: '<strong>Välkommen till min portföljwebbsida!</strong> Min resa inom IT började vid 14 års ålder, när min skola visade en utbildningsfilm om att välja en karriär inom spelutveckling. Då tänkte inte jag så mycket på det, men min passion för programmering tog fart senare samma år när skolan öppnade en spelutvecklingsklubb. Jag gick med utan att veta att det snart skulle ta upp hela mitt liv.',
             firstParagraph2: 'Spelen som skapades under mina tre år i klubben är nu borta, men min passion för inlärning och programmering var starkt etablerad. Att skapa spel var roligt, men när jag närmade mig början av gymnasiet insåg jag att jag ville kunna mer än bara spel. Av en slump, när en vän och jag besökte Comic-Con, märkte vi en nyuppsatt monter som gjorde reklam för en gymnasieskola, LBS Kreativa Gymnasiet, som visade upp spel gjorda av sina elever och program tillgängliga på deras skola. "Kan elever som går här göra dessa saker?" - tänkte vi.',
@@ -21,9 +23,11 @@ document.addEventListener('DOMContentLoaded', function () {
         },
         en: {
             blurb: 'AI, IT and cybersecurity enthusiast with a passion for learning and problem solving <br><a href="https://www.linkedin.com/in/erik-zubarev/" target="_blank">@LinkedIn</a>',
-            firstheader1: 'Where I started',
+            arrowText: '<strong>Contact me</strong>',
+            firstheader1: 'About me',
             firstheader2: 'Education, job experiences and achievements',
             thirdheader: 'Key skills',
+            fourthHeader: 'Projects',
             finalHeader: 'Get in touch',
             firstParagraph1:'<strong>Welcome to my portfolio!</strong> My journey in IT began at the age of 14, when my school showed an educational video about pursuing a career in game development. At the time, I didn&#39t think much of it, but my passion for programming truly blossomed later that year when the school set up a game-making club. I innocently joined, unaware that it would soon consume my entire life.',
             firstParagraph2:'Although the games created during my three years in the club are now lost to time, my passion for learning and programming was firmly established. Making games was fun, but as I got closer to high school I started to realize I wanted more than just games. By chance, a friend and I were browsing Comic-Con when we noticed a newly set-up stall advertising a high school, LBS Kreativa Gymnasiet, showcasing games made by their students and programs available at their school. “Are students that go here able to make these things?” - we thought.',
@@ -38,9 +42,11 @@ document.addEventListener('DOMContentLoaded', function () {
         },
         ru: {
             blurb: '',
+            arrowText: '<strong></strong>',
             firstheader1: '',
             firstheader2:'',
             thirdheader: '',
+            fourthHeader: '',
             finalHeader:'',
             firstParagraph1:'',
             firstParagraph2:'',
