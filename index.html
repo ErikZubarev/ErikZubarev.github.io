@@ -160,7 +160,7 @@
 						</header>
 						<div class="content">
 							<p id="finalEmailForm"></p>
-							<form>
+							<form method="POST" name="contactform" action="send-mail.php">
 								<div class="fields">
 									<div class="field half">
 										<input type="text" name="name" id="name" placeholder="" />
@@ -209,6 +209,8 @@
 
 		<!-- Scripts -->
 			<script src="assets/js/language.js"></script>
+			<script src="assets/js/gen_validatorv31.js"></script>
+			<script src="assets/js/mailvalidation.js"></script>
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrolly.min.js"></script>
 			<script src="assets/js/browser.min.js"></script>
