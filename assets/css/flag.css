@@ -1,18 +1,23 @@
 .flag-button img {
     width: 3rem;
-    height: 3rem;
+    height: auto;
 }
+
 .fixed-box {
     position: fixed;
     top:0;
     left:0;
     z-index:1;
-    margin: 1rem;
+    margin: 1em;
+    display: flex;
+    flex-direction: column;
 }
 
-.fixed-box > button {
-    padding:1;
-    margin:0;
+.fixed-box button {
+    width: 3rem;
+    height:auto;
+    padding:0;
+    box-sizing: border-box;
     line-height: 0;
-    height: 0;
+    margin-bottom: 1rem;
 }
