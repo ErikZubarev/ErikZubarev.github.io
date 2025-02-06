@@ -101,17 +101,15 @@ document.addEventListener('DOMContentLoaded', function () {
         button.addEventListener('click', function () {
             const selectedLanguage = button.getAttribute('data-language');
             const translation = translations[selectedLanguage];
-
+            
+            document.getElementById('finalEmailForm').innerHTML = translation.finalEmailForm;
             document.getElementById('name').setAttribute('placeholder', translation.namePlaceholder);
             document.getElementById('email').setAttribute('placeholder', translation.emailPlaceholder);
             document.getElementById('message').setAttribute('placeholder', translation.messagePlaceholder);
             document.getElementById('submitButton').setAttribute('value', translation.buttonText);
             
             for (const key in translation) {
-                if (translation.hasOwnProperty(key)) {
-                    document.getElementById(key).innerHTML = translation[key];
-                    
-                }
+                document.getElementById(key).innerHTML = translation[key];
             }
         });
     });
@@ -119,15 +117,14 @@ document.addEventListener('DOMContentLoaded', function () {
     window.onload = function() {
         const translation = translations['se'];
 
+        document.getElementById('finalEmailForm').innerHTML = translation.finalEmailForm;
         document.getElementById('name').setAttribute('placeholder', translation.namePlaceholder);
         document.getElementById('email').setAttribute('placeholder', translation.emailPlaceholder);
         document.getElementById('message').setAttribute('placeholder', translation.messagePlaceholder);
         document.getElementById('submitButton').setAttribute('value', translation.buttonText);
 
         for (const key in translation) {
-            if (translation.hasOwnProperty(key)) {
-                document.getElementById(key).innerHTML = translation[key];
-            }
+            document.getElementById(key).innerHTML = translation[key];
         }
 
 
