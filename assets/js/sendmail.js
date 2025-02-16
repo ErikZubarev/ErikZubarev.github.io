@@ -4,7 +4,7 @@ document.getElementById('contactform').addEventListener('submit', function(event
     const formData = new FormData(event.target);
     const data = Object.fromEntries(formData.entries());
 
-    fetch('/.netlify/functions/send-email.js', {
+    fetch('/.netlify/functions/send-email', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
