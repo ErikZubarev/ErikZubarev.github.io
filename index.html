@@ -167,16 +167,16 @@
 						</header>
 						<div class="content">
 							<p id="finalEmailForm"></p>
-							<form method="POST" name="contactform" action="">
+							<form method="POST" name="contactform" action="send-mail.php">
 								<div class="fields">
 									<div class="field half">
-										<input type="text" name="name" id="name" placeholder="" required/>
+										<input type="text" name="name" id="name" placeholder="" />
 									</div>
 									<div class="field half">
-										<input type="email" name="email" id="email" placeholder="" required/>
+										<input type="email" name="email" id="email" placeholder="" />
 									</div>
 									<div class="field">
-										<textarea name="message" id="message" placeholder="" rows="7" required></textarea>
+										<textarea name="message" id="message" placeholder="" rows="7"></textarea>
 									</div>
 								</div>
 								<ul class="actions">
@@ -213,6 +213,8 @@
 
 		<!-- Scripts -->
 			<script src="assets/js/language.js"></script>
+			<script src="assets/js/gen_validatorv31.js"></script>
+			<script src="assets/js/mailvalidation.js"></script>
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrolly.min.js"></script>
 			<script src="assets/js/browser.min.js"></script>
