@@ -19,15 +19,13 @@ document.addEventListener('DOMContentLoaded', function () {
             fourthProject1Header: '<a href="https://github.com/PVT-15-3/HoopUp" target="_blank">HoopUp - basketappen</a>',
             fourthProject1text1: 'HoopUp är ett projekt jag och sju andra personer sammarbetade på under vår utbildning på Stockholms Universitet. Med fyra designers och fyra programmerare lyckades vi skapa en innovativ app som integrerar API:er, unit testing och databaser för att kunna boka in basketspel, filtrera vem som får vara med samt ha en chatt för att kunna plannera.',
             fourthProject1text2: 'Jag antog scrum master rollen under projektet samt hjälpte jag till med att programmera och unit-testa. Vi använde GitHub aktivt och följde agile scrum modellen under hela projektet och slutade upp med något vi alla är otroligt stolta över. Projektet var för det mesta skrivet i Dart genom Flutter, och kan där för laddas ner på både iOS och Android',
-            fourthProject2Header: '',
-            fourthProject2text: '',
-            fourthProject3Header: '',
-            fourthProject3text: '',
+            fifthHeader: 'Andra tjänster',
+            fifthText: 'Jag har en extensiv utbildning kring data- och systemvetenskap där jag har hunnit lära mig mycket som inte endast är programmering. Jag har även intresse - och erbjuder tjänster - för: <ul><li>AI utveckling</li><li>Cybersäkerhets konsultation</li><li>Fullstack webbutveckling</li><li>App utveckling</li><li>UI/UX/Intuitiv Design</li><li>Design för grafiker</li></ul>',
             finalEmail: 'Email',
             finalPhone: 'Telefon',
             finalAddress: 'Address',
             finalElsewhere: 'Annat',
-            finalEmailForm: '<strong>Här kan du mejla!</strong> Fyll i formuläret nedan för att skicka ett mejl till mig',
+            finalEmailForm: '<strong>Vill du ha mig på ditt team?</strong> Fyll i formuläret nedan för att skicka mig ett mejl!',
             namePlaceholder: 'Namn',
             emailPlaceholder: 'E-post',
             messagePlaceholder: 'Meddelande',
@@ -49,16 +47,14 @@ document.addEventListener('DOMContentLoaded', function () {
             fourthIntro:'<strong>This sections showcases the different projects I have worked on.</strong> These are some of the best projects that illustrate my knowlage and abilities. Each project links to my GitHub if you need access to the code',
             fourthProject1Header: '<a href="https://github.com/PVT-15-3/HoopUp" target="_blank">HoopUp - basketball app</a>',
             fourthProject1text1: 'HoopUp is a project that I and seven other people collaborated on during our studies at Stockholm University. With four designers and four programmers, we managed to create an innovative app that integrates APIs, unit testing, and databases to book basketball games, filter who can join, and have a chat for planning.',
-            fourthProject1text2: 'I took on the role of Scrum Master during the project and also helped with programming and unit testing. We actively used GitHub and followed the Agile Scrum model throughout the project, resulting in something we are all incredibly proud of. The project was mostly written in Dart using Flutter, and can therefore be downloaded on both iOS and Android.',
-            fourthProject2Header: '',
-            fourthProject2text: '',
-            fourthProject3Header: '',
-            fourthProject3text: '',
+            fourthProject1text2: 'I assumed the role of Scrum Master during the project and also helped with programming and unit testing. We actively used GitHub and followed the Agile Scrum model throughout the project, resulting in something we are all incredibly proud of. The project was mostly written in Dart using Flutter, and can therefore be downloaded on both iOS and Android.',
+            fifthHeader: 'Other services',
+            fifthText: '',
             finalEmail: 'Email',
             finalPhone: 'Phone',
             finalAddress: 'Address',
             finalElsewhere: 'Elsewhere',
-            finalEmailForm: '<strong>Consider mailing!</strong> Fill out the form below to send me an email',
+            finalEmailForm: '<strong>Want me on your team?</strong> Fill out the form below to send me an email!',
             namePlaceholder: 'Name',
             emailPlaceholder: 'Email',
             messagePlaceholder: 'Message',
@@ -67,7 +63,7 @@ document.addEventListener('DOMContentLoaded', function () {
         ru: {
             blurb: '',
             arrowText: '<strong></strong>',
-            firstheader1: '',
+                firstheader1: '',
             firstheader2:'',
             thirdheader: '',
             fourthHeader: '',
@@ -81,10 +77,8 @@ document.addEventListener('DOMContentLoaded', function () {
             fourthProject1Header: '',
             fourthProject1text1: '',
             fourthProject1text2: '',
-            fourthProject2Header: '',
-            fourthProject2text: '',
-            fourthProject3Header: '',
-            fourthProject3text: '',
+            fifthHeader: '',
+            fifthText: '',
             finalEmail: '',
             finalPhone: '',
             finalAddress: '',
@@ -97,27 +91,8 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     };
 
-    flagButtons.forEach(button => {
-        button.addEventListener('click', function () {
-            const selectedLanguage = button.getAttribute('data-language');
-            const translation = translations[selectedLanguage];
-            
-            document.getElementById('finalEmailForm').innerHTML = translation.finalEmailForm;
-            document.getElementById('name').setAttribute('placeholder', translation.namePlaceholder);
-            document.getElementById('email').setAttribute('placeholder', translation.emailPlaceholder);
-            document.getElementById('message').setAttribute('placeholder', translation.messagePlaceholder);
-            document.getElementById('submitButton').setAttribute('value', translation.buttonText);
-            
-            for (const key in translation) {
-                document.getElementById(key).innerHTML = translation[key];
-            }
-        });
-    });
-
-    window.onload = function() {
-        const translation = translations['se'];
-
-        document.getElementById('finalEmailForm').innerHTML = translation.finalEmailForm;
+    //Updates webbsite with correct translation
+    function applyLang(translation){
         document.getElementById('name').setAttribute('placeholder', translation.namePlaceholder);
         document.getElementById('email').setAttribute('placeholder', translation.emailPlaceholder);
         document.getElementById('message').setAttribute('placeholder', translation.messagePlaceholder);
@@ -126,7 +101,20 @@ document.addEventListener('DOMContentLoaded', function () {
         for (const key in translation) {
             document.getElementById(key).innerHTML = translation[key];
         }
+    }
 
+    //When language flag is pressed
+    flagButtons.forEach(button => {
+        button.addEventListener('click', function () {
+            const selectedLanguage = button.getAttribute('data-language');
+            const translation = translations[selectedLanguage];
+            applyLang(translation);
+        });
+    });
 
+    //First time loading webbsite
+    window.onload = function() {
+        const translation = translations['se'];
+        applyLang(translation);
     }
 });
