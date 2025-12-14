@@ -85,90 +85,73 @@
 	// Gallery.
 		$('.gallery')
 			.on('click', 'a', function(event) {
+			var $a = $(this),
+				$gallery = $a.parents('.gallery'),
+				$modal = $gallery.children('.modal'),
+				href = $a.attr('href');
 
-				var $a = $(this),
-					$gallery = $a.parents('.gallery'),
-					$modal = $gallery.children('.modal'),
-					$modalImg = $modal.find('img'),
-					href = $a.attr('href');
+			// Only allow certain types
+			if (!href.match(/\.(jpg|gif|png|mp4)$/i))
+				return;
 
-				// Not an image? Bail.
-					if (!href.match(/\.(jpg|gif|png|mp4)$/))
-						return;
+			event.preventDefault();
+			event.stopPropagation();
 
-				// Prevent default.
-					event.preventDefault();
-					event.stopPropagation();
+			if ($modal[0]._locked) return;
+			$modal[0]._locked = true;
 
-				// Locked? Bail.
-					if ($modal[0]._locked)
-						return;
+			// Clear previous content
+			var $inner = $modal.find('.inner');
+			$inner.empty();
 
-				// Lock.
-					$modal[0]._locked = true;
+			if (href.match(/\.mp4$/i)) {
+				// Create video
+				var $video = $('<video controls autoplay />');
+				$video.attr('src', href);
+				$inner.append($video);
 
-				// Set src.
-					$modalImg.attr('src', href);
+				// When video is ready, mark loaded
+				$video.on('loadeddata', function() {
+				$modal.addClass('loaded');
+				});
+			} else {
+				// Create image
+				var $img = $('<img />');
+				$img.attr('src', href);
+				$inner.append($img);
 
-				// Set visible.
-					$modal.addClass('visible');
+				$img.on('load', function() {
+				$modal.addClass('loaded');
+				});
+			}
 
-				// Focus.
-					$modal.focus();
+			$modal.addClass('visible').focus();
 
-				// Delay.
-					setTimeout(function() {
-
-						// Unlock.
-							$modal[0]._locked = false;
-
-					}, 600);
-
+			setTimeout(function() {
+				$modal[0]._locked = false;
+			}, 600);
 			})
+			
 			.on('click', '.modal', function(event) {
+			var $modal = $(this),
+				$inner = $modal.find('.inner');
 
-				var $modal = $(this),
-					$modalImg = $modal.find('img');
+			if ($modal[0]._locked) return;
+			if (!$modal.hasClass('visible')) return;
 
-				// Locked? Bail.
-					if ($modal[0]._locked)
-						return;
+			event.stopPropagation();
+			$modal[0]._locked = true;
 
-				// Already hidden? Bail.
-					if (!$modal.hasClass('visible'))
-						return;
+			$modal.removeClass('loaded');
 
-				// Stop propagation.
-					event.stopPropagation();
-
-				// Lock.
-					$modal[0]._locked = true;
-
-				// Clear visible, loaded.
-					$modal
-						.removeClass('loaded')
-
-				// Delay.
-					setTimeout(function() {
-
-						$modal
-							.removeClass('visible')
-
-						setTimeout(function() {
-
-							// Clear src.
-								$modalImg.attr('src', '');
-
-							// Unlock.
-								$modal[0]._locked = false;
-
-							// Focus.
-								$body.focus();
-
-						}, 475);
-
-					}, 125);
-
+			setTimeout(function() {
+				$modal.removeClass('visible');
+				setTimeout(function() {
+				$inner.empty(); // clear both img or video
+				$modal[0]._locked = false;
+				$body.focus();
+				}, 475);
+			}, 125);
 			})
 			.on('keypress', '.modal', function(event) {
 
@@ -185,7 +168,7 @@
 					event.stopPropagation();
 
 			})
-			.prepend('<div class="modal" tabIndex="-1"><div class="inner"><img src="" /></div></div>')
+			.prepend('<div class="modal" tabIndex="-1"><div class="inner"></div></div>')
 				.find('img')
 					.on('load', function(event) {
 

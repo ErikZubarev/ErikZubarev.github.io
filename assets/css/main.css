@@ -2939,7 +2939,7 @@ input, select, textarea {
 		width: calc(100% + 1.25rem);
 	}
 
-		.gallery a {
+		.gallery a{
 			border-bottom: 0;
 			display: block;
 			margin: 1.25rem 0 0 1.25rem;
@@ -2949,7 +2949,7 @@ input, select, textarea {
 			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 		}
 
-			.gallery a img {
+			.gallery a img{
 				display: block;
 				height: 25vw;
 				min-height: 18rem;
@@ -3060,12 +3060,13 @@ input, select, textarea {
 				opacity: 0;
 			}
 
-				.gallery .modal .inner img {
+				.gallery .modal .inner img, .gallery .modal .inner video{
 					box-shadow: 0 1rem 3rem 0 rgba(0, 0, 0, 0.35);
 					display: block;
 					max-height: 90vh;
 					max-width: 90vw;
 				}
+
 
 			.gallery .modal.visible {
 				pointer-events: auto;
