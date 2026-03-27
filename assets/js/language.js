@@ -27,7 +27,9 @@ document.addEventListener('DOMContentLoaded', function () {
         document.getElementById('submitButton').setAttribute('value', translation.buttonText);
 
         for (const key in translation) {
-            document.getElementById(key).innerHTML = translation[key];
+            if(document.getElementById(key) != null){
+                document.getElementById(key).innerHTML = translation[key];
+            }
         }
     }
 });
