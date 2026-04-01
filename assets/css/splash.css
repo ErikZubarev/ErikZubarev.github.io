@@ -1,0 +1,11 @@
+h1, h2, h3, p {
+
+  transition: transform 0.2s ease, text-shadow 0.2s ease;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.3);
+  will-change: transform;
+}
+
+h1:hover, h2:hover, h3:hover, p:hover {
+  transform: translateX(3px);
+  text-shadow: 0 3px 3px rgba(0,0,0,0.4);
+}

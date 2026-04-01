@@ -1833,54 +1833,48 @@ input, select, textarea {
 
 /* Button */
 
-	input[type="submit"],
-	input[type="reset"],
-	input[type="button"],
-	button,
-	.button {
-		-moz-appearance: none;
-		-webkit-appearance: none;
-		-ms-appearance: none;
-		appearance: none;
-		-moz-transition: border-color 0.2s ease;
-		-webkit-transition: border-color 0.2s ease;
-		-ms-transition: border-color 0.2s ease;
-		transition: border-color 0.2s ease;
-		background-color: transparent;
-		border: solid 1px !important;
-		border-color: rgba(255, 255, 255, 0.15) !important;
-		border-radius: 3em;
-		color: #ffffff !important;
-		cursor: pointer;
-		display: inline-block;
-		font-size: 0.6em;
-		font-weight: bold;
-		height: calc(4.75em + 2px);
-		letter-spacing: 0.25em;
-		line-height: 4.75em;
-		outline: 0;
-		padding: 0 3.75em;
-		position: relative;
-		text-align: center;
-		text-decoration: none;
-		text-transform: uppercase;
-		white-space: nowrap;
-	}
+		input[type="submit"],
+		input[type="reset"],
+		input[type="button"],
+		button,
+		.button {
+			-moz-appearance: none;
+			-webkit-appearance: none;
+			-ms-appearance: none;
+			appearance: none;
+
+			/* Add these transitions */
+			transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.2s ease;
+
+			background-color: transparent;
+			border: solid 1px;
+			border-color: rgba(255, 255, 255, 1);
+			border-radius: 3em;
+			color: #ffffff;
+			cursor: pointer;
+			display: inline-block;
+			font-size: 0.6em;
+			font-weight: bold;
+			height: calc(4.75em + 2px);
+			letter-spacing: 0.25em;
+			line-height: 4.75em;
+			outline: 0;
+			padding: 0 3.75em;
+			position: relative;
+			text-align: center;
+			text-decoration: none;
+			text-transform: uppercase;
+			white-space: nowrap;
+		}
+
 
 		input[type="submit"]:after,
 		input[type="reset"]:after,
 		input[type="button"]:after,
 		button:after,
 		.button:after {
-			-moz-transform: scale(0.25);
-			-webkit-transform: scale(0.25);
-			-ms-transform: scale(0.25);
-			transform: scale(0.25);
 			pointer-events: none;
-			-moz-transition: opacity 0.2s ease, -moz-transform 0.2s ease;
-			-webkit-transition: opacity 0.2s ease, -webkit-transform 0.2s ease;
-			-ms-transition: opacity 0.2s ease, -ms-transform 0.2s ease;
-			transition: opacity 0.2s ease, transform 0.2s ease;
+			transition: transform 0.15s ease, box-shadow 0.15s ease;
 			background: #ffffff;
 			border-radius: 3em;
 			content: '';
@@ -1960,20 +1954,10 @@ input, select, textarea {
 		input[type="button"]:hover,
 		button:hover,
 		.button:hover {
-			border-color: rgba(255, 255, 255, 0.55) !important;
+			box-shadow: 4px 4px 0 white;
+			transform: translate(-2px, -2px);
 		}
 
-			input[type="submit"]:hover:after,
-			input[type="reset"]:hover:after,
-			input[type="button"]:hover:after,
-			button:hover:after,
-			.button:hover:after {
-				opacity: 0.05;
-				-moz-transform: scale(1);
-				-webkit-transform: scale(1);
-				-ms-transform: scale(1);
-				transform: scale(1);
-			}
 
 			input[type="submit"]:hover:active,
 			input[type="reset"]:hover:active,
@@ -3495,7 +3479,7 @@ input, select, textarea {
 		@media screen and (max-width: 736px) {
 
 			#sidebar + #wrapper {
-				padding-top: 0;
+				display: block !important;
 			}
 
 		}
@@ -3880,9 +3864,11 @@ input, select, textarea {
 		@media screen and (max-width: 736px) {
 
 			#sidebar {
+				display: block !important;
+			}
+			#sidebar nav {
 				display: none;
 			}
-
 		}
 
 /* Intro */

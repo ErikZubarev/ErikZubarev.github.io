@@ -27,9 +27,10 @@ document.addEventListener('DOMContentLoaded', function () {
         document.getElementById('submitButton').setAttribute('value', translation.buttonText);
 
         for (const key in translation) {
-            if(document.getElementById(key) != null){
-                document.getElementById(key).innerHTML = translation[key];
-            }
+            const elements = document.querySelectorAll("." + key);
+            elements.forEach(el => {
+                el.innerHTML = translation[key];
+            });
         }
     }
 });
