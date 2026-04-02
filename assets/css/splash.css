@@ -11,19 +11,19 @@ h1:hover, h2:hover, h3:hover, p:hover {
 }
 
 
-section .image {
+.spotlights .image {
     position: relative;
     display: block;
     overflow: hidden;
     border-radius: 0.75rem;
 }
 
-section .image img {
+.spotlights .image img {
     transition: transform 0.4s ease;
     transform: scale(1);
 }
 
-section .image::after {
+.spotlights .image::after {
     content: "";
     position: absolute;
     inset: 0;
@@ -31,16 +31,65 @@ section .image::after {
     border-radius: inherit;
     transition: border-color 0.4s ease, opacity 0.4s ease;
     pointer-events: none;
+
+    animation: slowBorderCycle 14s ease-in-out infinite;
+    opacity: 0;
+    transition: opacity 0.6s ease;
 }
 
-section .image:hover::after {
-    border-color: rgba(255, 255, 255, 0.9);
+.spotlights .image:hover::after {
     opacity: 1;
 }
 
-section .image:hover {
+.spotlights .image:hover {
     box-shadow: 0 12px 30px rgba(0,0,0,0.35);
     transition: box-shadow 0.4s ease, transform 0.4s ease;
 }
 
+/* Swedish (default) */
+:root,
+body.lang-se {
+    --glow-1: #006aa7; /* blue */
+    --glow-2: #fecc00; /* yellow */
+    --glow-3: #4aa3df; /* lighter blue */
+}
 
+/* English (UK) */
+body.lang-en {
+    --glow-1: #cf142b; /* red */
+    --glow-2: #3962ca; /* blue */
+    --glow-3: #ffffff; /* white */
+}
+
+/* Russian */
+body.lang-ru {
+    --glow-1: #ffffff; /* white */
+    --glow-2: #3f71dd; /* blue */
+    --glow-3: #d52b1e; /* red */
+}
+
+
+@keyframes slowColorCycle {
+    0%   { color: var(--glow-1); }
+    33%  { color: var(--glow-2); }
+    66%  { color: var(--glow-3); }
+    100% { color: var(--glow-1); }
+}
+
+@keyframes slowBorderCycle {
+    0%   { border-color: var(--glow-1); }
+    33%  { border-color: var(--glow-2); }
+    66%  { border-color: var(--glow-3); }
+    100% { border-color: var(--glow-1); }
+}
+
+a {
+    animation: slowColorCycle 12s ease-in-out infinite;
+    transition: color 0.4s ease;
+}
+
+#sidebar a,
+#menu a {
+    animation: none !important;
+    color: inherit;
+}

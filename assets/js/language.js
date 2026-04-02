@@ -34,3 +34,13 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     }
 });
+
+document.querySelectorAll('.flag-button').forEach(btn => {
+    btn.addEventListener('click', () => {
+        const lang = btn.dataset.language;
+
+        document.body.classList.remove('lang-se', 'lang-en', 'lang-ru');
+        document.body.classList.add(`lang-${lang}`);
+    });
+});
+
