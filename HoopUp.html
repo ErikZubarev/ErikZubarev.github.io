@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<title>HoopUp - Projekt</title>
+		<title>Generic - Hyperspace by HTML5 UP</title>
 		<link rel="icon" href="/images/letter-e-svgrepo-com.svg">
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
@@ -9,31 +9,47 @@
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 		<link rel="stylesheet" href="assets/css/flag.css"/>
 		<link rel="stylesheet" href="assets/css/splash.css"/>
+		<link rel="stylesheet" href="assets/css/gallery.css"/>
 	</head>
 	<body class="is-preload">
 
 		<!-- Header -->
 			<header id="header">
-				<a href="index.html" class="title">Hyperspace</a>
+				<a href="index.html" class="title">🡐  Erik Zubarev</a>
 				<nav>
-					<ul>
-						<li><a href="index.html">Home</a></li>
-						<li><a href="generic.html" class="active">Generic</a></li>
-						<li><a href="elements.html">Elements</a></li>
-					</ul>
+					<div class="fixed-box">
+						<button class="flag-button" data-language="se">
+							<img src="https://flagcdn.com/se.svg" alt="SE">
+						</button>
+						<button class="flag-button" data-language="en">
+							<img src="https://flagcdn.com/gb.svg" alt="EN">
+						</button>
+						<button class="flag-button" data-language="ru">
+							<img src="https://flagcdn.com/ru.svg" alt="RU">
+						</button> 
+					</div>
 				</nav>
 			</header>
 
 		<!-- Wrapper -->
-			<div id="wrapper">
-
+			<div id="wrapper" class="header-offset">
 				<!-- Main -->
 					<section id="main" class="wrapper">
 						<div class="inner">
 							<h1 class="major">A Generic Page</h1>
-							<span class="image fit"><img src="images/pic04.jpg" alt="" /></span>
-							<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fergiat. Pellentesque in mi eu massa lacinia malesuada et a elit. Donec urna ex, lacinia in purus ac, pretium pulvinar mauris. Curabitur sapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit tristique.</p>
-							<p>Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fersapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit tristique lorem ipsum dolor.</p>
+							<div class="gallery">
+								<a href="images/pic04.jpg" class="image landscape"><img src="images/pic04.jpg" alt="" /></a>
+								<a href="images/pic02.jpg" class="image"><img src="images/pic02.jpg" alt="" /></a>
+								<a href="images/pic03.jpg" class="image"><img src="images/pic02.jpg" alt="" /></a>
+								<a href="images/pic05.jpg" class="image landscape"><img src="images/pic05.jpg" alt="" /></a>
+							</div>
+							<br>
+							<h2 class="AboutMeheader1"></h2>
+							<p class="AboutMeParagraph1"></p>
+							<p class="AboutMeParagraph2"></p>
+							<p class="AboutMeParagraph3"></p>
+							<p class="AboutMeParagraph4"></p>
+							<a href="#" class="button"><span class="takeMeToGitHub"></span></a>
 						</div>
 					</section>
 
@@ -49,6 +65,7 @@
 			</footer>
 
 		<!-- Scripts -->
+		 	<script src="assets/js/language.js"></script>
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrollex.min.js"></script>
 			<script src="assets/js/jquery.scrolly.min.js"></script>
@@ -56,7 +73,5 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>			
-			<script src="assets/js/language.js"></script>
-
 	</body>
 </html>
