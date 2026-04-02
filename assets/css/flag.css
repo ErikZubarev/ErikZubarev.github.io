@@ -1,6 +1,5 @@
-/* Container for the flags */
 .fixed-box {
-    position: absolute;
+    position:absolute;
     top: 0;
     left: 0;
     z-index: 1;
@@ -20,7 +19,6 @@
     pointer-events: none;
 }
 
-/* Remove all default button styling */
 .fixed-box button {
     background: none;
     padding: 0;
@@ -38,7 +36,6 @@
     border: solid 1px;
 }
 
-
 .fixed-box button:hover {
     background-color: rgba(255, 255, 255, 1);
     box-shadow: 4px 4px 0 white;
@@ -48,6 +45,12 @@
 .fixed-box button:active {
     transform: scale(0.9);
     box-shadow: none;
+}
+
+#header .fixed-box {
+    position: static;
+    margin-left: auto;
+    justify-content: flex-end;
 }
 
 /* Responsive */
