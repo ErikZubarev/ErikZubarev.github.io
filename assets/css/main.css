@@ -1842,15 +1842,12 @@ input, select, textarea {
 			-webkit-appearance: none;
 			-ms-appearance: none;
 			appearance: none;
-
-			/* Add these transitions */
 			transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.2s ease;
-
 			background-color: transparent;
 			border: solid 1px;
 			border-color: rgba(255, 255, 255, 1);
 			border-radius: 3em;
-			color: #ffffff;
+			color: rgba(255, 255, 255, 1);
 			cursor: pointer;
 			display: inline-block;
 			font-size: 0.6em;
@@ -1864,7 +1861,6 @@ input, select, textarea {
 			text-align: center;
 			text-decoration: none;
 			text-transform: uppercase;
-			white-space: nowrap;
 		}
 
 
@@ -1954,7 +1950,7 @@ input, select, textarea {
 		input[type="button"]:hover,
 		button:hover,
 		.button:hover {
-			box-shadow: 4px 4px 0 white;
+			box-shadow: 4px 4px 0 rgba(255, 255, 255, 1);
 			transform: translate(-2px, -2px);
 		}
 
@@ -1964,7 +1960,7 @@ input, select, textarea {
 			input[type="button"]:hover:active,
 			button:hover:active,
 			.button:hover:active {
-				border-color: #ffffff !important;
+				border-color: rgba(255, 255, 255, 1) !important;
 			}
 
 				input[type="submit"]:hover:active:after,

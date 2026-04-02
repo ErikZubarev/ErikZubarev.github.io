@@ -9,3 +9,38 @@ h1:hover, h2:hover, h3:hover, p:hover {
   transform: translateX(3px);
   text-shadow: 0 3px 3px rgba(0,0,0,0.4);
 }
+
+
+section .image {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    border-radius: 0.75rem;
+}
+
+section .image img {
+    transition: transform 0.4s ease;
+    transform: scale(1);
+}
+
+section .image::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border: 3px solid rgba(255, 255, 255, 0); 
+    border-radius: inherit;
+    transition: border-color 0.4s ease, opacity 0.4s ease;
+    pointer-events: none;
+}
+
+section .image:hover::after {
+    border-color: rgba(255, 255, 255, 0.9);
+    opacity: 1;
+}
+
+section .image:hover {
+    box-shadow: 0 12px 30px rgba(0,0,0,0.35);
+    transition: box-shadow 0.4s ease, transform 0.4s ease;
+}
+
+
