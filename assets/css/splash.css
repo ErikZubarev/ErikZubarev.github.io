@@ -11,19 +11,19 @@ h1:hover, h2:hover, h3:hover, p:hover {
 }
 
 
-.spotlights .image {
+.image {
     position: relative;
     display: block;
     overflow: hidden;
     border-radius: 0.75rem;
 }
 
-.spotlights .image img {
+.image img {
     transition: transform 0.4s ease;
     transform: scale(1);
 }
 
-.spotlights .image::after {
+.image::after {
     content: "";
     position: absolute;
     inset: 0;
@@ -37,11 +37,11 @@ h1:hover, h2:hover, h3:hover, p:hover {
     transition: opacity 0.6s ease;
 }
 
-.spotlights .image:hover::after {
+.image:hover::after {
     opacity: 1;
 }
 
-.spotlights .image:hover {
+.image:hover {
     box-shadow: 0 12px 30px rgba(0,0,0,0.35);
     transition: box-shadow 0.4s ease, transform 0.4s ease;
 }
