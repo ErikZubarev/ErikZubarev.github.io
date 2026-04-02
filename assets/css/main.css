@@ -3535,6 +3535,24 @@ input, select, textarea {
 		height: 1em; 
 	}
 
+	/* When screen width is 480px or less */
+	@media screen and (max-width: 480px) {
+
+		/* Stack footer items vertically */
+		#footer > .inner .menu {
+			flex-direction: column;
+			align-items: center;   /* optional: centers everything */
+			gap: 0.75em;           /* spacing between rows */
+		}
+
+		/* Make each <li> take its own row */
+		#footer > .inner .menu li {
+			width: 100%;
+			display: flex;
+			justify-content: center; /* centers text + logo */
+		}
+	}
+
 /* Sidebar */
 
 	#sidebar {
