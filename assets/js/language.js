@@ -21,6 +21,31 @@ document.addEventListener('DOMContentLoaded', function () {
 
     //Updates webbsite with correct translation
     function applyLang(translation){
+        langChangeButtons(translation)
+
+        for (const key in translation) {
+            const elements = document.querySelectorAll("." + key);
+            elements.forEach(el => {
+                let text = translation[key];
+                
+                // If element has truncation class, apply cutoff
+                if (el.classList.contains("truncate-100")) {          
+                    text = truncateWords(text, 100);
+                }
+
+                el.innerHTML = text;
+            });
+        }
+    }
+
+    function truncateWords(text) {
+        limit = 50;
+        const words = text.split(" ");
+        let trunc = words.slice(0, limit);
+        return trunc.join(" ") + "...";
+    }
+
+    function langChangeButtons(translation){
         const nameField = document.getElementById('name');
         const emailField = document.getElementById('email');
         const messageField = document.getElementById('message');
@@ -36,13 +61,6 @@ document.addEventListener('DOMContentLoaded', function () {
         }
         if (submitButton) {
             submitButton.setAttribute('value', translation.buttonText);
-        }
-
-        for (const key in translation) {
-            const elements = document.querySelectorAll("." + key);
-            elements.forEach(el => {
-                el.innerHTML = translation[key];
-            });
         }
     }
 
