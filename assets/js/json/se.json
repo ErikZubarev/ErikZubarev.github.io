@@ -30,5 +30,6 @@
    "namePlaceholder": "Namn",
    "emailPlaceholder": "E-post",
    "messagePlaceholder": "Meddelande",
-   "buttonText": "Skicka meddelande"
+   "buttonText": "Skicka meddelande",
+   "takeMeToGitHub": "Ta mig till GitHub <span class='icon brands fa-github'></span>"
 }

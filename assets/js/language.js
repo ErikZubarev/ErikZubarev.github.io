@@ -21,10 +21,22 @@ document.addEventListener('DOMContentLoaded', function () {
 
     //Updates webbsite with correct translation
     function applyLang(translation){
-        document.getElementById('name').setAttribute('placeholder', translation.namePlaceholder);
-        document.getElementById('email').setAttribute('placeholder', translation.emailPlaceholder);
-        document.getElementById('message').setAttribute('placeholder', translation.messagePlaceholder);
-        document.getElementById('submitButton').setAttribute('value', translation.buttonText);
+        const nameField = document.getElementById('name');
+        const emailField = document.getElementById('email');
+        const messageField = document.getElementById('message');
+        const submitButton = document.getElementById('submitButton');
+        if (nameField) {
+            nameField.setAttribute('placeholder', translation.namePlaceholder);
+        }        
+        if (emailField) {
+            emailField.setAttribute('placeholder', translation.emailPlaceholder);
+        }
+        if (messageField) {
+            messageField.setAttribute('placeholder', translation.messagePlaceholder);
+        }
+        if (submitButton) {
+            submitButton.setAttribute('value', translation.buttonText);
+        }
 
         for (const key in translation) {
             const elements = document.querySelectorAll("." + key);
@@ -33,14 +45,14 @@ document.addEventListener('DOMContentLoaded', function () {
             });
         }
     }
-});
 
-document.querySelectorAll('.flag-button').forEach(btn => {
-    btn.addEventListener('click', () => {
-        const lang = btn.dataset.language;
+    document.querySelectorAll('.flag-button').forEach(btn => {
+        btn.addEventListener('click', () => {
+            const lang = btn.dataset.language;
 
-        document.body.classList.remove('lang-se', 'lang-en', 'lang-ru');
-        document.body.classList.add(`lang-${lang}`);
+            document.body.classList.remove('lang-se', 'lang-en', 'lang-ru');
+            document.body.classList.add(`lang-${lang}`);
+        });
     });
 });
 
