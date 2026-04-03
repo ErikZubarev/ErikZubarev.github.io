@@ -1,0 +1,72 @@
+﻿Blurb
+IT‑tech – Development – Cybersecurity<br><a href="https://github.com/ErikZubarev" target="_blank">@GitHub</a>
+welcome
+Welcome
+AboutMeheader1
+About me
+AboutMeParagraph1
+<strong>Welcome to my portfolio!</strong> My name is Erik and I am an enthusiastic IT nerd who has been tinkering with computers since I was 12 years old. I am proud of my bachelor’s degree in Computer and Systems Sciences and have worked as an IT technician for over 5 years. I met my partner at university and together we move forward in life one step at a time.
+AboutMeParagraph2
+My interest in technology began when I joined a programming club that had recently opened at my school. I developed games, created so‑called “mods” for games, drew graphics, and tinkered with hardware both at the club and in my free time. The interest stayed with me even after I left school, and I continue to this day. I completed my highschool degree in system development and got my first job right after—at the same school. The principal happened to need a new IT technician, and I took the job while studying at university.
+AboutMeParagraph3
+Privacy and security are very important to me. I always put in extra effort to customize my devices so I know exactly what I share and what can reach me from the internet. For example, I have customized the operating systems on my phone and home computers, I have a home server where I monitor network traffic, and I create applications that perform simple tasks so I don’t need to use someone else’s. Doing everything myself is more demanding, but it’s important for me to learn how my devices work and to have the ability to solve problems independently.
+StrengthsHeader1
+Operating systems
+StrengthsText1
+Windows 10 / 11 – Linux (Arch, Ubuntu) – Windows Server – Linux Server – Raspberry Pi
+StrengthsHeader2
+Connected services
+StrengthsText2
+NAS server and smart home connected to my domain with Zero Trust
+StrengthsHeader3
+Software
+StrengthsText3
+GitHub – Visual Studio – VS Code – Android Studio – VIM – FileZilla
+StrengthsHeader4
+Programming languages
+StrengthsText4
+Java – C# – Python – JS – Bash – PowerShell – Flutter – HTML – CSS – PHP
+StrengthsHeader5
+Interests
+StrengthsText5
+I go on cycling trips, am part of a Brazilian Jiu Jitsu club, and live a physically active life. I love puzzles and play so‑called “variant sudoku” daily. I love my piano, cooking, and would love to take care of a dog. On weekends I usually play games, disc golf, or tinker with my devices.
+StrengthsHeader6
+Qualities
+StrengthsText6
+I am pedagogical, committed, and a leader. I am a good listener, thorough, and think things through before making a decision. I have ADHD, which both helps and hinders me. I like having many things going on at once and can see patterns where others struggle, but I constantly need something to do and have difficulty letting go of tasks.
+ProjectsHeader
+Things I have done
+ProjectsProject1Header
+HoopUp – the basketball app
+ProjectsProject1text1
+HoopUp is a project that I and seven other people collaborated on during our studies at Stockholm University. With four designers and four programmers, we managed to create an app that integrates APIs to book basketball games with others. The app connects to a Firebase database, uses unit testing, and makes use of many technical tools such as a wizard. The app has a 5‑star‑based ranking system where users can book a court at a certain skill level, select an age group, and select a gender group to play with.
+ProjectsProject1text2
+The task was to create a connected service that integrates an API on a map and is physically accessible. Different groups had different ideas—for example, apps for bar crawls and birdwatching were created—but we liked the idea of a basketball booking app. We found an API with information about basketball courts around Stockholm and built a booking system, a live map, a profile system, and a chat. We also went around and asked for feedback from the user group several times and implemented their answers into the app.
+ProjectsProject1text3
+I took on the Scrum Master role during the project and was also responsible for programming and unit testing. We used GitHub actively and followed the Agile‑Scrum model throughout the project, which resulted in something we are all incredibly proud of. The project was written in Dart using Flutter, and can therefore be downloaded on both iOS and Android. I learned how to program async and use so‑called providers for the first time, which was difficult but very rewarding.
+ProjectsProject2Header
+NAS server
+ProjectsProject2text1
+I have set up a NAS server to store my media in a secure place. Ever since I learned about self‑hosting, I have become quite invested in it and slowly began moving my life online to a place I can keep track of. My and my partner’s photos, music, documents, and more are stored here and can easily be accessed through apps like Home Assistant, JellyFin, and Nextcloud. With Zero Trust configured, we strengthen the security of the files, and with Raid 10 we have both protection against hardware failure and fast data.
+ProjectsProject3Header
+Internet of Things – Traffic system
+ProjectsProject3text1
+During my bachelor’s program, I built a simulation of a traffic system connected to a monitoring app. The entire system was built on a Raspberry Pi connected to a proximity sensor and LED lights in three colors, which acted as traffic lights. When no traffic was detected, the lights turned off, and when the sensor registered a car, they turned on again. The Raspberry Pi sent the status of the sensor and traffic lights to the app, which in turn sent back instructions from a simple algorithm about which lights should be on. When the traffic lights were on, the app calculated how much money the Swedish Transport Administration would pay—see image below.
+ProjectsProject3text2
+The project aimed to solve the problem of unnecessary energy consumption while also exploring how smart cities can contribute to more sustainable solutions. The Raspberry Pi used its GPIO ports to communicate with the hardware and the MQTT network protocol to communicate with the app. The MQTT protocol became one of the biggest challenges during the project, as I struggled to get it working for most of the course. In the end, I managed to solve the problem, and I feel that I learned a lot about network communication, IoT systems, and app development.
+ProjectsProject3text3
+The results showed that the Swedish Transport Administration could save 33,000 SEK per hour, assuming all traffic lights in Stockholm were turned off. At the time of the project, no such function existed in reality as far as I know, but today the Swedish Transport Administration has implemented a similar solution in traffic.
+finalHeader
+Get in touch
+finalEmailForm
+<strong>Do you want me on your team?</strong> Fill out the form below to send me an email!
+namePlaceholder
+Name
+emailPlaceholder
+Email
+messagePlaceholder
+Message
+buttonText
+Send message
+takeMeToGitHub
+Take me to GitHub <span class='icon brands fa-github'></span>
