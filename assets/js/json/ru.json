@@ -34,5 +34,8 @@
     "emailPlaceholder": "почта",
     "messagePlaceholder": "Сообщение",
     "buttonText": "Отправить сообщение",
-    "takeMeToGitHub": "Перейти на GitHub <span class='icon brands fa-github'></span>"
+    "takeMeToGitHub": "Перейти на GitHub <span class='icon brands fa-github'></span>",
+    "favoriteOne":"Любимый цвет: <span class=\"favColor favorite\">Фиолетовый!</span>",
+    "favoriteTwo":"Любимая песня: <span class=\"color2 favorite\">Poster Kid - Ahli</span>",
+    "favoriteThree":"Любимое время года: <span class=\"color3 favorite\">Осень!</span>"
 }

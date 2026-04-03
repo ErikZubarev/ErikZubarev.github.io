@@ -34,5 +34,9 @@
     "emailPlaceholder": "Email",
     "messagePlaceholder": "Message",
     "buttonText": "Send message",
-    "takeMeToGitHub": "Take me to GitHub <span class='icon brands fa-github'></span>"
+    "takeMeToGitHub": "Take me to GitHub <span class='icon brands fa-github'></span>",
+    "favoriteOne":"Favorite color: <span class=\"favColor favorite\">Purple!</span>",
+    "favoriteTwo":"Favorite song: <span class=\"color2 favorite\">Poster Kid - Ahli</span>",
+    "favoriteThree":"Favorite <span class=\"color3 favorite\">season: Autumn!</span>"
+
 }

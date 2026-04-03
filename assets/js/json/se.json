@@ -34,5 +34,8 @@
     "emailPlaceholder": "E-post",
     "messagePlaceholder": "Meddelande",
     "buttonText": "Skicka meddelande",
-    "takeMeToGitHub": "Ta mig till GitHub <span class='icon brands fa-github'></span>"
+    "takeMeToGitHub": "Ta mig till GitHub <span class='icon brands fa-github'></span>",
+    "favoriteOne":"Favoritfärg: <span class=\"favColor favorite\">Lila!</span>",
+    "favoriteTwo":"Favoritlåt: <span class=\"color2 favorite\">Poster Kid - Ahli</span>",
+    "favoriteThree":"Favoritårstid: <span class=\"color3 favorite\">Höst!</span>"
 }
