@@ -1,31 +1,90 @@
-.flag-button img {
-    width: auto;
-    height: 2rem;
-}
-
 .fixed-box {
-    position: fixed;
-    top:0;
-    left:0;
-    z-index:1;
-    margin: 1em;
+    position:absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
     display: flex;
     flex-direction: row;
+    gap: 2rem;
+}
+
+.flag-button img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: inherit;
+    display: block;
+    -webkit-user-drag: none;
+    user-select: none;
+    pointer-events: none;
 }
 
 .fixed-box button {
-    width: auto;
-    height:2rem;
+    background: none;
     padding: 0;
-    box-sizing: border-box;
-    line-height: 0;
-    margin-right: 2rem;
+    cursor: pointer;
+    outline: none;
+    box-shadow: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 4rem;
+    height: 2.5rem;
+    border-radius: 0.8rem !important;
+    background-color: rgba(255, 255, 255, 1);
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+    border: solid 1px;
 }
 
-@media screen and (max-width: 1152px) {
+.fixed-box button:hover {
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: 4px 4px 0 white;
+    transform: translate(-2px, -2px);
+}
 
+.fixed-box button:active {
+    transform: scale(0.9);
+    box-shadow: none;
+}
+
+#header .fixed-box {
+    position: static;
+    margin-left: auto;
+    justify-content: flex-end;
+}
+
+/* Responsive */
+/* Design */
+/* Is */
+/* The */
+/* Best! */
+@media (min-width: 1281px) {
     .fixed-box {
-        top: auto;
-        bottom: 0;
+        width: 100%;
+        margin: 0 auto;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (max-width: 1280px) {
+    .fixed-box {
+        position: relative;
+        margin-right: 2rem;
+        margin-top: 0.5rem;
+    }
+}
+
+
+@media (max-width: 740px) {
+    .fixed-box {
+        position: relative;
+
+        width: 100%;
+        margin: 0 auto;
+        justify-content: center;
+        align-items: center;
+
+        gap: 1.5rem;
     }
 }
