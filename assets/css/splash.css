@@ -1,15 +1,19 @@
-h1, h2, h3, p {
-
-  transition: transform 0.2s ease, text-shadow 0.2s ease;
-  text-shadow: 0 1px 3px rgba(0,0,0,0.3);
-  will-change: transform;
+h1,
+h2,
+h3,
+p {
+    transition: transform 0.2s ease, text-shadow 0.2s ease;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+    will-change: transform;
 }
 
-h1:hover, h2:hover, h3:hover, p:hover {
-  transform: translateX(3px);
-  text-shadow: 0 3px 3px rgba(0,0,0,0.4);
+h1:hover,
+h2:hover,
+h3:hover,
+p:hover {
+    transform: translateX(3px);
+    text-shadow: 0 3px 3px rgba(0, 0, 0, 0.4);
 }
-
 
 .image {
     position: relative;
@@ -27,7 +31,7 @@ h1:hover, h2:hover, h3:hover, p:hover {
     content: "";
     position: absolute;
     inset: 0;
-    border: 3px solid rgba(255, 255, 255, 0); 
+    border: 3px solid rgba(255, 255, 255, 0);
     border-radius: inherit;
     transition: border-color 0.4s ease, opacity 0.4s ease;
     pointer-events: none;
@@ -42,45 +46,76 @@ h1:hover, h2:hover, h3:hover, p:hover {
 }
 
 .image:hover {
-    box-shadow: 0 12px 30px rgba(0,0,0,0.35);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
     transition: box-shadow 0.4s ease, transform 0.4s ease;
 }
 
 /* Swedish (default) */
 :root,
 body.lang-se {
-    --glow-1: #006aa7; /* blue */
-    --glow-2: #fecc00; /* yellow */
-    --glow-3: #4aa3df; /* lighter blue */
+    --glow-1: #006aa7;
+    /* blue */
+    --glow-2: #fecc00;
+    /* yellow */
+    --glow-3: #4aa3df;
+    /* lighter blue */
 }
 
 /* English (UK) */
 body.lang-en {
-    --glow-1: #cf142b; /* red */
-    --glow-2: #3962ca; /* blue */
-    --glow-3: #ffffff; /* white */
+    --glow-1: #cf142b;
+    /* red */
+    --glow-2: #3962ca;
+    /* blue */
+    --glow-3: #ffffff;
+    /* white */
 }
 
 /* Russian */
 body.lang-ru {
-    --glow-1: #ffffff; /* white */
-    --glow-2: #3f71dd; /* blue */
-    --glow-3: #d52b1e; /* red */
+    --glow-1: #ffffff;
+    /* white */
+    --glow-2: #3f71dd;
+    /* blue */
+    --glow-3: #d52b1e;
+    /* red */
 }
 
 
 @keyframes slowColorCycle {
-    0%   { color: var(--glow-1); }
-    33%  { color: var(--glow-2); }
-    66%  { color: var(--glow-3); }
-    100% { color: var(--glow-1); }
+    0% {
+        color: var(--glow-1);
+    }
+
+    33% {
+        color: var(--glow-2);
+    }
+
+    66% {
+        color: var(--glow-3);
+    }
+
+    100% {
+        color: var(--glow-1);
+    }
 }
 
 @keyframes slowBorderCycle {
-    0%   { border-color: var(--glow-1); }
-    33%  { border-color: var(--glow-2); }
-    66%  { border-color: var(--glow-3); }
-    100% { border-color: var(--glow-1); }
+    0% {
+        border-color: var(--glow-1);
+    }
+
+    33% {
+        border-color: var(--glow-2);
+    }
+
+    66% {
+        border-color: var(--glow-3);
+    }
+
+    100% {
+        border-color: var(--glow-1);
+    }
 }
 
 a {
@@ -95,7 +130,6 @@ a {
 }
 
 
-/* Flipper circle */
 
 .flip-container {
     perspective: 100000px;
@@ -113,7 +147,7 @@ a {
     transition: transform 0.8s ease, translate 0.8s ease;
 }
 
-.hover{
+.hover {
     transition: transform 0.3s ease, translate 0.3s ease;
 }
 
@@ -133,7 +167,7 @@ a {
     overflow: hidden;
     backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
-    aspect-ratio: 1 / 1;  
+    aspect-ratio: 1 / 1;
 }
 
 .circle img.fill {
@@ -148,7 +182,7 @@ a {
 .circle.front {
     transform: translateZ(20px);
 }
-/* Back side */
+
 .circle.back {
     background: #222;
     color: white;
@@ -170,32 +204,52 @@ a {
     border: none;
 }
 
-.fun-facts p{
+.fun-facts p {
     margin: 0;
 }
 
 .favColor {
     color: rgb(173, 15, 173);
-    font-weight: bold;
 }
 
 .color2 {
     color: rgb(202, 23, 23);
-    font-weight: bold;
 }
 
 .color3 {
     color: rgb(207, 207, 54);
-    font-weight: bold;
 }
 
 .favorite {
     display: inline-block;
     animation: jumpy 1s steps(1) infinite;
+    font-weight: bold;
 }
 
 @keyframes jumpy {
-    0%   { transform: translateY(0); }
-    50%  { transform: translateY(-4px); }
-    100% { transform: translateY(0); }
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-4px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+
+@media (hover: none) {
+  h1, h2, h3, p, .hover {
+    transition: none;
+    text-shadow: none;
+    transform: none;
+  }
+
+  h1:hover, h2:hover, h3:hover, p:hover, .hover:hover {
+    transform: none;
+    text-shadow: none;
+  }
 }
