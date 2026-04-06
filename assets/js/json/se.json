@@ -37,5 +37,6 @@
     "takeMeToGitHub": "Ta mig till GitHub <span class='icon brands fa-github'></span>",
     "favoriteOne": "Favoritfärg: <span class=\"favColor favorite\">Lila!</span>",
     "favoriteTwo": "Favoritlåt: <span class=\"color2 favorite\">Poster Kid - Ahli</span>",
-    "favoriteThree": "Favoritårstid: <span class=\"color3 favorite\">Höst!</span>"
+    "favoriteThree": "Favoritårstid: <span class=\"color3 favorite\">Höst!</span>",
+    "favoriteFour": "<span class=\"favColor favorite\">Starkt emot generativ AI!</span>"
 }
