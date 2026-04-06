@@ -14,9 +14,9 @@
     "StrengthsHeader4": "Programmeringsspråk",
     "StrengthsText4": "Java - C# - Python - JS - Bash - PowerShell - Flutter - HTML - CSS - PHP",
     "StrengthsHeader5": "Intressen",
-    "StrengthsText5": "Jag tar cykelresor, är med i en Brazilian Jiu Jitsu klubb och lever ett fysiskt aktivt liv. Jag älskar pussel och spelar sk. \"variant sudoku\" vardagligen. Jag älskar min piano, att laga mat och skulle älska att ta hand om en hund. På helger brukar jag spela spel, köra discgolf eller mecka med min hårdvara.",
+    "StrengthsText5": "Cykelresor - Brazilian Jiu Jitsu - Matlagning - <a href=\"https://www.sudoku-variants.com/\" target=\"_blank\">Variant Sudoku</a> - Piano - Matlagning - Diskgolf",
     "StrengthsHeader6": "Egenskaper",
-    "StrengthsText6": "Jag är pedagogisk, engagerad och en ledare. Jag är en bra lyssnare, är noggrann och tänker igenom allt innan jag tar ett beslut. Jag har ADHD, som både hjälper och hindrar mig. Jag gillar att ha många bollar i luften och kan se mönster där andra har det svårt, men behöver konstant ha något att göra och har det svårt att släppa uppgifter.",
+    "StrengthsText6": "Pedagogisk - Engagerad - Ledare - Bra lyssnare - Noggrann - Jag har ADHD, som både hjälper och hindrar mig. Jag gillar att ha många bollar i luften och kan se mönster där andra har det svårt, men behöver konstant ha något att göra och har det svårt att släppa uppgifter.",
     "ProjectsHeader": "Saker jag har gjort",
     "ProjectsProject1Header": "HoopUp - basketappen",
     "ProjectsProject1text1": "HoopUp är ett projekt jag och sju andra personer samarbetade på under vår utbildning på Stockholms Universitet. Med fyra designers och fyra programmerare lyckades vi skapa en app som integrerar API:er för att boka in basketmatch med andra. Appen ansluter till en Firebase-databas, använder unit testing och använder sig av många tekniska verktyg som exempelvis en wizard. Appen har ett 5 stjärnig-baserad ranking system där användare kan boka en bana på en viss skicklighetsnivå, välja åldersgrupp och välja könsgrupp.",
@@ -35,7 +35,7 @@
     "messagePlaceholder": "Meddelande",
     "buttonText": "Skicka meddelande",
     "takeMeToGitHub": "Ta mig till GitHub <span class='icon brands fa-github'></span>",
-    "favoriteOne":"Favoritfärg: <span class=\"favColor favorite\">Lila!</span>",
-    "favoriteTwo":"Favoritlåt: <span class=\"color2 favorite\">Poster Kid - Ahli</span>",
-    "favoriteThree":"Favoritårstid: <span class=\"color3 favorite\">Höst!</span>"
+    "favoriteOne": "Favoritfärg: <span class=\"favColor favorite\">Lila!</span>",
+    "favoriteTwo": "Favoritlåt: <span class=\"color2 favorite\">Poster Kid - Ahli</span>",
+    "favoriteThree": "Favoritårstid: <span class=\"color3 favorite\">Höst!</span>"
 }

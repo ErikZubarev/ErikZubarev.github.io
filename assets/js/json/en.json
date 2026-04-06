@@ -14,9 +14,9 @@
     "StrengthsHeader4": "Programming languages",
     "StrengthsText4": "Java – C# – Python – JS – Bash – PowerShell – Flutter – HTML – CSS – PHP",
     "StrengthsHeader5": "Interests",
-    "StrengthsText5": "I go on cycling trips, am part of a Brazilian Jiu Jitsu club, and live a physically active life. I love puzzles and play so‑called “variant sudoku” daily. I love my piano, cooking, and would love to take care of a dog. On weekends I usually play games, disc golf, or tinker with my devices.",
-    "StrengthsHeader6": "Qualities",
-    "StrengthsText6": "I am pedagogical, committed, and a leader. I am a good listener, thorough, and think things through before making a decision. I have ADHD, which both helps and hinders me. I like having many things going on at once and can see patterns where others struggle, but I constantly need something to do and have difficulty letting go of tasks.",
+    "StrengthsText5": "Cycling trips – Brazilian Jiu Jitsu – Cooking – <a href=\"https://www.sudoku-variants.com/\" target=\"_blank\">Variant Sudoku</a> – Piano – Cooking – Disc golf",
+    "StrengthsHeader6": "Characteristics",
+    "StrengthsText6": "Pedagogical – Engaged – Leader – Good listener – Thorough – I have ADHD, which both helps and hinders me. I like having many things going on at once and can see patterns where others struggle, but I constantly need something to do and find it difficult to let go of tasks.",
     "ProjectsHeader": "Things I have done",
     "ProjectsProject1Header": "HoopUp – the basketball app",
     "ProjectsProject1text1": "HoopUp is a project that I and seven other people collaborated on during our studies at Stockholm University. With four designers and four programmers, we managed to create an app that integrates APIs to book basketball games with others. The app connects to a Firebase database, uses unit testing, and makes use of many technical tools such as a wizard. The app has a 5‑star‑based ranking system where users can book a court at a certain skill level, select an age group, and select a gender group to play with.",
@@ -35,8 +35,7 @@
     "messagePlaceholder": "Message",
     "buttonText": "Send message",
     "takeMeToGitHub": "Take me to GitHub <span class='icon brands fa-github'></span>",
-    "favoriteOne":"Favorite color: <span class=\"favColor favorite\">Purple!</span>",
-    "favoriteTwo":"Favorite song: <span class=\"color2 favorite\">Poster Kid - Ahli</span>",
-    "favoriteThree":"Favorite <span class=\"color3 favorite\">season: Autumn!</span>"
-
+    "favoriteOne": "Favorite color: <span class=\"favColor favorite\">Purple!</span>",
+    "favoriteTwo": "Favorite song: <span class=\"color2 favorite\">Poster Kid - Ahli</span>",
+    "favoriteThree": "Favorite <span class=\"color3 favorite\">season: Autumn!</span>"
 }
